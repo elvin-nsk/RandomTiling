@@ -19,6 +19,11 @@ Private Sub UserForm_Initialize()
   isOk = False
 End Sub
 
+Private Sub cbRotate_Click()
+  'если включен поворот, то выключаем высоту (так как берём ширину для обоих размеров в основном коде)
+  If cbRotate Then ElementH.Enabled = False Else ElementH.Enabled = True
+End Sub
+
 Private Sub btnOK_Click()
   isOk = True
   Unload Me

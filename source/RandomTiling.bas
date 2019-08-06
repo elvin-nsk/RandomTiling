@@ -38,6 +38,7 @@ Sub start()
   
   boostStart "Случайное замощение", True
   
+  If rot Then eh = ew 'если вращаем, то стороны должны быть одинаковые
   StartX = 0
   StartY = 0
   Randomize
